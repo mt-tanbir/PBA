@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBA | Home</title>
+    <meta name="description"
+        content="Get insight into how fixed income bonds can boost your portfolio earnings with stable and secure investments. We’ve compiled the top government and corporate bond yields in 2025, with expert-analysis from Parker Blackwood’s top financial advisers.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-xl">
+                    <div class="container-fluid">
+                        <a class="navbar-brand header-logo" href="index.html">
+                            <div class="">
+                                <img id="header-logo" src="assets/images/Parker-Blackwood-Advisers-Logo.svg" alt="logo">
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#headerNavbarDropdown" aria-controls="headerNavbarDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-menu-icon"><i id="menuIcon" class="fa-solid fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="headerNavbarDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item d-none">
+                                    <a class="nav-link navbar-brand header-logo-mob" href="index.html">
+                                        <div class="">
+                                            <img id="header-logo" src="assets/images/Parker-Blackwood-Advisers-Logo.svg"
+                                                alt="logo">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#pba-guide-form">About The Guide</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pba-compare">Types of Bonds</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pba-fixed-income">Why Fixed Income</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pba-get-expert">Expert Guidance</a>
+                                </li>
+                                <!-- Header btn for mobile responsive -->
+                                <li class="nav-item d-block d-xl-none">
+                                    <a href="download-screen.html" class="btn btnPrimary">Get Your FREE Guide
+                                        Today!</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-buttons d-none d-xl-block">
+                            <a href="#" id="popupTrigger" class="btn btnPrimary">Get Your FREE Guide Today!</a>
+                        </div>
+
+                        <!-- Popup Form Container -->
+                        <div id="popupContainer" class="popup-overlay">
+                            <div class="popup-content">
+                                <span class="popup-close">&times;</span>
+                                <div class="pba-investment-form pba-investment-form-2">
+                                    <div class="pba-form-title">
+                                        Get Insight into <span class="pba-highlight">The Top Fixed Income Bond
+                                            Investments Available</span> to
+                                        You.
+                                        Complete the Form Below to Get Your <span class="pba-highlight">FREE
+                                            Guide!</span>
+                                    </div>
+
+                                    <form id="ajaxForm">
+                                        <div class="pba-form-row">
+                                            <div class="pba-form-col">
+                                                <input type="text" name="firstName" class="pba-form-input"
+                                                    placeholder="First Name" required>
+                                            </div>
+                                            <div class="pba-form-col">
+                                                <input type="text" name="lastName" class="pba-form-input"
+                                                    placeholder="Last Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="pba-form-row">
+                                            <div class="pba-form-col full">
+                                                <input type="email" name="email" class="pba-form-input"
+                                                    placeholder="Email Address" required>
+                                            </div>
+                                        </div>
+                                        <div class="pba-form-row">
+                                            <div class="pba-form-col full">
+                                                <input type="number" name="phone" class="pba-form-input"
+                                                    placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="pba-form-row">
+                                            <div class="pba-form-col full">
+                                                <input type="text" name="state" class="pba-form-input"
+                                                    placeholder="State">
+                                            </div>
+                                        </div>
+                                        <div class="pba-form-row">
+                                            <div class="pba-form-col">
+                                                <div class="pba-select-wrapper">
+                                                    <select class="pba-form-select" required>
+                                                        <option value="" disabled selected>Investment Amount</option>
+                                                        <option value="25000">$25,000 - $50,000</option>
+                                                        <option value="50000">$50,000 - $100,000</option>
+                                                        <option value="100000">$100,000 - $250,000</option>
+                                                        <option value="250000">$250,000+</option>
+                                                    </select>
+                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="pba-form-col">
+                                                <div class="pba-select-wrapper">
+                                                    <select class="pba-form-select" required>
+                                                        <option value="" disabled selected>Investment Timeline</option>
+                                                        <option value="short">0-2 Years</option>
+                                                        <option value="medium">2-5 Years</option>
+                                                        <option value="long">5+ Years</option>
+                                                    </select>
+                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btnSecond pba-submit-btn">Get Your
+                                            <strong>FREE</strong> Guide
+                                            Today!</button>
+                                    </form>
+
+                                    <!-- Response Message -->
+                                    <div id="formResponse"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+
+    <!-- Hero Section Start -->
+    <div id="hero" class="hero">
+        <div class="hero-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-block d-lg-none mb-5">
+                        <img class="pba-hero-1-img" src="assets/images/hero-1-img.png" alt="PBA Image">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-1-content-box">
+                            <div class="bond-card">
+                                <span class="discover">DISCOVER</span>
+                                <span class="year">2025’s</span><br>
+                                <span class="top-fixed">TOP FIXED INCOME</span><br>
+                                <span class="bonds">BONDS</span><br>
+                                <span class="discover">EARNING UP TO</span>
+                                <span class="year">12%</span>
+                                <span class="pa">p.a.</span>
+                                <a href="#" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="hero-1-info-card">
+                                <p class="text">Get insight into how <strong>fixed income bonds</strong> can boost your
+                                    portfolio earnings with stable and secure investments. We’ve
+                                    compiled the <strong>top government and corporate bond yields in 2025</strong>, with
+                                    expert-analysis from <strong>Parker Blackwood’s</strong> top
+                                    financial advisers.</p>
+                                <a href="download-screen.html" class="btn btnPrimary">Get Your <strong>FREE</strong>
+                                    Guide Today!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img class="pba-hero-1-img" src="assets/images/hero-1-img.png" alt="PBA Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+
+
+    <!-- PBA Logo Slider Section Start -->
+    <div id="pba-logo-slider" class="pba-logo-slider">
+        <div class="pba-logo-slider-area">
+            <div class="container">
+                <div class="pba-logo-slider-box">
+                    <div class="slick-carousel">
+                        <div class="pba-single-logo"><img src="assets/images/Benzinga-Logo.svg" alt="logo"></div>
+                        <div class="pba-single-logo"><img src="assets/images/market-insider.svg" alt="logo"></div>
+                        <div class="pba-single-logo"><img src="assets/images/Morningstar_Logo.svg.svg" alt="logo"></div>
+                        <div class="pba-single-logo"><img src="assets/images/Yahoo!_Finance_logo_2021.svg" alt="logo">
+                        </div>
+                        <div class="pba-single-logo"><img src="assets/images/investing.svg" alt="logo"></div>
+                        <div class="pba-single-logo"><img src="assets/images/Benzinga-Logo.svg" alt="logo"></div>
+                        <div class="pba-single-logo"><img src="assets/images/market-insider.svg" alt="logo"></div>
+                        <div class="pba-single-logo"><img src="assets/images/Morningstar_Logo.svg.svg" alt="logo"></div>
+                        <div class="pba-single-logo"><img src="assets/images/Yahoo!_Finance_logo_2021.svg" alt="logo">
+                        </div>
+                        <div class="pba-single-logo"><img src="assets/images/investing.svg" alt="logo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PBA Logo Slider Section End -->
+
+
+
+    <!-- Investment Guide Form Section Start -->
+    <div id="pba-guide-form" class="pba-guide-form">
+        <div class="pba-guide-form-area">
+            <div class="container">
+                <div class="pba-guide-form-box">
+                    <div class="row">
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="pba-guide-info">
+                                <div class="d-flex gap-4 align-items-end">
+                                    <img src="assets/images/Parker-Blackwood-Advisers-Icon.svg" alt="logo">
+                                    <div class="section-title">
+                                        <span class="discover">GET YOUR FREE</span><br>
+                                        <span class="top-fixed">INVESTMENT GUIDE</span>
+                                    </div>
+                                </div>
+                                <div class="section-text">
+                                    <p>Make informed, strategic investment decisions with expert
+                                        insights tailored for Australian investors. Our <strong>Top Fixed Income Bonds
+                                            Report</strong> gives you the data, analysis, and strategies you need to
+                                        maximize your returns with confidence.</p>
+                                    <p><strong>✔ Top Fixed Income Bond Yields</strong> – A curated list of fixed-income
+                                        opportunities offering competitive returns.</p>
+                                    <p><strong>✔ In-Depth Market Analysis</strong> – Understand key trends shaping the
+                                        Australian investment landscape.</p>
+                                    <p><strong>✔ Expert Commentary</strong> – Gain insights from seasoned financial
+                                        professionals on interest rates, risks, and opportunities.</p>
+                                    <p><strong>✔ Smart Investment Strategies</strong> – Learn how to diversify, manage
+                                        risk, and optimize your portfolio for long-term success.</p>
+                                    <p><strong>📥 Download the Free Guide Now</strong> by completing the form and start
+                                        making smarter investment moves today!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-lg-0 mb-5">
+                            <div class="pba-investment-form">
+                                <div class="pba-form-title">
+                                    Get Insight into <span class="pba-highlight">The Top Fixed Income Bond Investments
+                                        Available</span> to You.
+                                    Complete the Form Below to Get Your <span class="pba-highlight">FREE Guide!</span>
+                                </div>
+
+                                <form id="ajaxForm">
+                                    <div class="pba-form-row">
+                                        <div class="pba-form-col">
+                                            <input type="text" name="firstName" class="pba-form-input"
+                                                placeholder="First Name" required>
+                                        </div>
+                                        <div class="pba-form-col">
+                                            <input type="text" name="lastName" class="pba-form-input"
+                                                placeholder="Last Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="pba-form-row">
+                                        <div class="pba-form-col full">
+                                            <input type="email" name="email" class="pba-form-input"
+                                                placeholder="Email Address" required>
+                                        </div>
+                                    </div>
+                                    <div class="pba-form-row">
+                                        <div class="pba-form-col full">
+                                            <input type="number" name="phone" class="pba-form-input"
+                                                placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <div class="pba-form-row">
+                                        <div class="pba-form-col full">
+                                            <input type="text" name="state" class="pba-form-input" placeholder="State">
+                                        </div>
+                                    </div>
+                                    <div class="pba-form-row">
+                                        <div class="pba-form-col">
+                                            <div class="pba-select-wrapper">
+                                                <select class="pba-form-select" required>
+                                                    <option value="" disabled selected>Investment Amount</option>
+                                                    <option value="25000">$25,000 - $50,000</option>
+                                                    <option value="50000">$50,000 - $100,000</option>
+                                                    <option value="100000">$100,000 - $250,000</option>
+                                                    <option value="250000">$250,000+</option>
+                                                </select>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                        <div class="pba-form-col">
+                                            <div class="pba-select-wrapper">
+                                                <select class="pba-form-select" required>
+                                                    <option value="" disabled selected>Investment Timeline</option>
+                                                    <option value="short">0-2 Years</option>
+                                                    <option value="medium">2-5 Years</option>
+                                                    <option value="long">5+ Years</option>
+                                                </select>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btnSecond pba-submit-btn">Get Your
+                                        <strong>FREE</strong> Guide Today!</button>
+                                </form>
+
+                                <!-- Response Message -->
+                                <div id="formResponse"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-block d-lg-none">
+                            <div class="pba-guide-info">
+                                <div class="d-flex gap-4 align-items-end">
+                                    <img src="assets/images/Parker-Blackwood-Advisers-Icon.svg" alt="logo">
+                                    <div class="section-title">
+                                        <span class="discover">GET YOUR FREE</span><br>
+                                        <span class="top-fixed">INVESTMENT GUIDE</span>
+                                    </div>
+                                </div>
+                                <div class="section-text">
+                                    <p>Make informed, strategic investment decisions with expert
+                                        insights tailored for Australian investors. Our <strong>Top Fixed Income Bonds
+                                            Report</strong> gives you the data, analysis, and strategies you need to
+                                        maximize your returns with confidence.</p>
+                                    <p><strong>✔ Top Fixed Income Bond Yields</strong> – A curated list of fixed-income
+                                        opportunities offering competitive returns.</p>
+                                    <p><strong>✔ In-Depth Market Analysis</strong> – Understand key trends shaping the
+                                        Australian investment landscape.</p>
+                                    <p><strong>✔ Expert Commentary</strong> – Gain insights from seasoned financial
+                                        professionals on interest rates, risks, and opportunities.</p>
+                                    <p><strong>✔ Smart Investment Strategies</strong> – Learn how to diversify, manage
+                                        risk, and optimize your portfolio for long-term success.</p>
+                                    <p><strong>📥 Download the Free Guide Now</strong> by completing the form and start
+                                        making smarter investment moves today!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Investment Guide Form Section End -->
+
+
+
+    <!-- Compare Slider Section Start -->
+    <div id="pba-compare" class="pba-compare">
+        <div class="pba-compare-area">
+            <div class="container">
+                <div class="pba-compare-slider-box">
+                    <div class="pba-compare-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="pba-compare-card">
+                                            <div class="pba-card-image">
+                                                <img src="assets/images/corporate-bond.png" alt="Banking Bond" />
+                                            </div>
+                                            <h6 class="pba-card-title">Corporate Bond</h6>
+                                            <div class="pba-card-rate">
+                                                12%<span class="pba-card-rate-suffix">p.a</span>
+                                            </div>
+                                            <div class="pba-card-details">
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Credit Rating</div>
+                                                    <div class="pba-detail-value">BBB</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Sector</div>
+                                                    <div class="pba-detail-value">Mining</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Country</div>
+                                                    <div class="pba-detail-value">Australia</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Maturity Date</div>
+                                                    <div class="pba-detail-value">6 Aug 2031</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Payment Freq.</div>
+                                                    <div class="pba-detail-value">Semi-Annually</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Min Investment</div>
+                                                    <div class="pba-detail-value">$50,000 AUD</div>
+                                                </div>
+                                            </div>
+
+                                            <button class="btn pba-card-button">Learn More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="pba-compare-card">
+                                            <div class="pba-card-image">
+                                                <img src="assets/images/goverment-bond.png" alt="Banking Bond" />
+                                            </div>
+                                            <h6 class="pba-card-title">Government Bond</h6>
+                                            <div class="pba-card-rate">
+                                                8<span class="pba-card-rate-suffix">% p.a</span>
+                                            </div>
+                                            <div class="pba-card-details">
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Credit Rating</div>
+                                                    <div class="pba-detail-value">AAA</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Sector</div>
+                                                    <div class="pba-detail-value">Sovereign</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Country</div>
+                                                    <div class="pba-detail-value">Canada</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Maturity Date</div>
+                                                    <div class="pba-detail-value">1 Jun 2027</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Payment Freq.</div>
+                                                    <div class="pba-detail-value">Semi-Annually</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Min Investment</div>
+                                                    <div class="pba-detail-value">$50,000 AUD</div>
+                                                </div>
+                                            </div>
+                                            <button class="btn pba-card-button">Learn More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="pba-compare-card">
+                                            <div class="pba-card-image">
+                                                <img src="assets/images/banking-bond.png" alt="Banking Bond" />
+                                            </div>
+                                            <h6 class="pba-card-title">Banking Bond</h6>
+                                            <div class="pba-card-rate">
+                                                9<span class="pba-card-rate-suffix">% p.a</span>
+                                            </div>
+                                            <div class="pba-card-details">
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Credit Rating</div>
+                                                    <div class="pba-detail-value">A</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Sector</div>
+                                                    <div class="pba-detail-value">Banking</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Country</div>
+                                                    <div class="pba-detail-value">Switzerland</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Maturity Date</div>
+                                                    <div class="pba-detail-value">15 Nov 2033</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Payment Freq.</div>
+                                                    <div class="pba-detail-value">Semi-Annually</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Min Investment</div>
+                                                    <div class="pba-detail-value">$50,000 AUD</div>
+                                                </div>
+                                            </div>
+                                            <button class="btn pba-card-button">Learn More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="pba-compare-card">
+                                            <div class="pba-card-image">
+                                                <img src="assets/images/banking-bond.png" alt="Banking Bond" />
+                                            </div>
+                                            <h6 class="pba-card-title">Banking Bond</h6>
+                                            <div class="pba-card-rate">
+                                                9<span class="pba-card-rate-suffix">% p.a</span>
+                                            </div>
+                                            <div class="pba-card-details">
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Credit Rating</div>
+                                                    <div class="pba-detail-value">A</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Sector</div>
+                                                    <div class="pba-detail-value">Banking</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Country</div>
+                                                    <div class="pba-detail-value">Switzerland</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Maturity Date</div>
+                                                    <div class="pba-detail-value">15 Nov 2033</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Payment Freq.</div>
+                                                    <div class="pba-detail-value">Semi-Annually</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Min Investment</div>
+                                                    <div class="pba-detail-value">$50,000 AUD</div>
+                                                </div>
+                                            </div>
+                                            <button class="btn pba-card-button">Learn More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="section-title">COMPARE STABLE & SECURE<br>
+                        <span class="bold">CORPORATE & GOV’T BOND YIELDS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compare Slider Section End -->
+
+
+
+    <!-- Fixed Income Section Start -->
+    <div id="pba-fixed-income" class="pba-fixed-income">
+        <div class="pba-fixed-income-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pba-fixed-income-content">
+                            <div class="section-title-box">
+                                <img src="assets/images/Parker-Blackwood-Advisers-Icon.svg" alt="logo">
+                                <div class="section-title">
+                                    <span class="discover">WHY INVEST IN</span><br>
+                                    <span class="top-fixed">FIXED INCOME?</span>
+                                </div>
+                            </div>
+                            <p>Navigating Australia’s financial market can be complex, but <strong>fixed income
+                                    bonds</strong> can offer a smart, secure way to grow your wealth. By investing in
+                                the top-performing corporate and gov’t bonds, you can ensure your <strong>long-term
+                                    savings and retirement goals</strong> are met, coupled with <strong>capital
+                                    preservation</strong>. <br><br>Our <strong>Top Fixed
+                                    Income Bonds Guide</strong> helps you make informed choices for stable returns and
+                                long-term financial success.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <div class="pba-fixed-income-img-box">
+                            <img src="assets/images/fixed-income.png" alt="fixed-income">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pba-facility-box">
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <div class="pba-single-facility">
+                                <img src="assets/images/icons/Codesandbox.svg" alt="icon">
+                                <h6>Strength & Security</h6>
+                                <p>Fixed-income investments are backed by trusted institutions and Australia’s strong
+                                    financial sector, providing a solid foundation for steady growth.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="pba-single-facility">
+                                <img src="assets/images/icons/Command.svg" alt="icon">
+                                <h6>Reliable Income</h6>
+                                <p>Unlike volatile markets, fixed-income investments offer consistent, predictable
+                                    returns, ensuring a steady cash flow for financial peace of mind.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="pba-single-facility">
+                                <img src="assets/images/icons/Briefcase.svg" alt="icon">
+                                <h6>Balanced Portfolio</h6>
+                                <p>Adding fixed income investments to your portfolio reduces risk while maximizing
+                                    stability, helping you secure long-term financial success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fixed Income Section End -->
+
+
+
+    <!-- Get Expert Section Start -->
+    <div id="pba-get-expert" class="pba-get-expert">
+        <div class="pba-get-expert-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pba-get-expert-content">
+                            <div class="section-title-box">
+                                <div class="section-title">
+                                    <span class="discover">Get Expert Guidance</span><br>
+                                    <span class="top-fixed">Every Step of the Way</span>
+                                </div>
+                            </div>
+                            <div class="section-text">
+                                <p>Whether you’re new to investing or a seasoned investor looking for fresh
+                                    opportunities, our expert team is here to help. At <strong>Parker Blackwood
+                                        Advisers</strong>, we provide tailored insights and professional guidance to
+                                    ensure you make confident, informed investment decisions.
+                                </p>
+                                <p><strong>💡 Personalized Support</strong> – Get expert advice suited to your financial
+                                    goals.</p>
+                                <p><strong>📈 Proven Strategies</strong> – Access time-tested investment approaches for
+                                    steady, high-yield returns.</p>
+                                <p><strong>🔎 Market Insights</strong> – Stay ahead with up-to-date financial trends and
+                                    opportunities.</p>
+                                <p><strong>📞 Need help?</strong>Contact us today and start building a smarter, stronger
+                                    portfolio! </p>
+                            </div>
+                            <div>
+                                <a href="download-screen.html" class="btn btnSecond">Speak to an Adviser Today!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative h-100">
+                            <div class="pba-get-expert-img-box d-none d-lg-block">
+                                <img src="assets/images/get-expert.png" alt="Get Expert Img">
+                            </div>
+
+                            <div class="pba-testimonial-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <img src="assets/images/testimonial-avatar.png" alt="Avatar">
+                                                <p class="text">"PBA’s guide gave me clear, actionable insights, helping
+                                                    me invest in
+                                                    high-yield bonds that are already exceeding my expectations."</p>
+                                                <div class="info-box">
+                                                    <div class="starbox">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p class="name"><strong>- Michelle R.,</strong> Perth</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <img src="assets/images/testimonial-avatar.png" alt="Avatar">
+                                                <p class="text">"PBA’s guide gave me clear, actionable insights, helping
+                                                    me invest in
+                                                    high-yield bonds that are already exceeding my expectations."</p>
+                                                <div class="info-box">
+                                                    <div class="starbox">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p class="name"><strong>- Michelle R.,</strong> Perth</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <img src="assets/images/testimonial-avatar.png" alt="Avatar">
+                                                <p class="text">"PBA’s guide gave me clear, actionable insights, helping
+                                                    me invest in
+                                                    high-yield bonds that are already exceeding my expectations."</p>
+                                                <div class="info-box">
+                                                    <div class="starbox">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p class="name"><strong>- Michelle R.,</strong> Perth</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Get Expert Section End -->
+
+
+    <!-- Scroll To Top Start -->
+    <button type="button" id="scrollToTop" class="scrollToTop"><i class="fa-solid fa-arrow-up icon"></i></button>
+    <!-- Scroll To Top End -->
+
+
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer">
+        <div class="footer-area">
+            <div class="container">
+                <div class="pba-footer-menu">
+                    <div><a href="index.html"><img src="assets/images/Parker-Blackwood-Advisers-Logo.svg"
+                                alt="logo"></a></div>
+                    <div class="pba-footer-menu-link">
+                        <a href="#">About The Guide</a>
+                        <a href="#">Types of Bonds</a>
+                        <a href="#">Why Fixed Income</a>
+                        <a href="#">Expert Guidance</a>
+                    </div>
+                    <div class="pba-footer-menu-address">
+                        <p>Exchange Tower <br>Level 17/2,<br> The Esplanade <br>Perth, WA 6000</p>
+                        <p><strong>Freephone:</strong> <br>1300 040 221 <br><strong>Switchboard:</strong> <br>08 6275
+                            0960</p>
+                    </div>
+                </div>
+                <div class="footer-info-text">
+                    <p>The information provided on this site is intended for general informational purposes only. It has
+                        been prepared without considering the specific goals, financial situation, or needs of
+                        investors. Prior to making any investment decisions, it is strongly recommended that investors
+                        seek professional advice to determine the appropriateness of the information provided based on
+                        their individual circumstances.</p>
+                    <p>Past performance is not necessarily indicative of future results. Global Investment Marketing Pty
+                        Ltd, trading as PBA
+                        Corporation Pty Ltd (Parker Blackwood Advisers) (ABN 98 162 183 244), is an Australian
+                        Proprietary Company incorporated
+                        on 01st of February, 2013. PBA Corporation Pty Ltd (Parker Blackwood Advisers) is licensed by
+                        the Australian Securities
+                        and Investments Commission (ASIC) that enables the operation and activities of Australian
+                        financial services businesses
+                        (AFSL 434 071).</p>
+                    <p>All investments carry inherent risks, and there is a possibility of losing value. Investors
+                        should be aware of the risks
+                        associated with investment decisions and carefully consider their options before proceeding. PBA
+                        Corporation Pty Ltd
+                        (Parker Blackwood Advisers) and its affiliates, directors, employees, agents, representatives,
+                        and advisers disclaim all
+                        liability for any loss arising directly or indirectly from the information provided in this
+                        publication. Reproduction of
+                        any part of this publication is strictly prohibited without the express written permission of
+                        PBA Corporation Pty Ltd
+                        (Parker Blackwood Advisers). By continuing to use this website, you acknowledge and accept the
+                        terms and conditions
+                        outlined above.</p>
+                    <p>PBA Corporation Pty Ltd (Parker Blackwood Advisers) humbly recognises and honours the enduring
+                        connection of Australia's
+                        Traditional Owners to the lands on which we operate, both past and present. We extend our
+                        deepest respect to the wisdom,
+                        resilience, and cultural heritage of Indigenous communities across Australia and pay our
+                        respects to their Elders, past,
+                        present, and emerging.</p>
+                </div>
+                <div class="footer-copyright-box">
+                    <p>© Copyright 2013 - 2025 Parker Blackwood Advisers. All rights reserved.</p>
+                    <div class="d-flex gap-2">
+                        <a href="terms-and-conditions.html">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Opt Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="assets/js/all.min.js"></script>
+    <!-- AOS Js -->
+    <script src="./assets/js/aos.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Swiper Slider -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
