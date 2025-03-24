@@ -34,6 +34,80 @@
 </head>
 
 <body>
+    <!-- Popup Form Container Start -->
+    <div id="popupContainer" class="popup-overlay">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <div class="pba-investment-form pba-investment-form-2">
+                <div class="pba-form-title">
+                    Get Insight into <span class="pba-highlight">The Top Fixed Income Bond Investments Available</span>
+                    to You.
+                    Complete the Form Below to Get Your <span class="pba-highlight">FREE Guide!</span>
+                </div>
+
+                <form id="ajaxForm">
+                    <div class="pba-form-row">
+                        <div class="pba-form-col">
+                            <input type="text" name="firstName" class="pba-form-input" placeholder="First Name"
+                                required>
+                        </div>
+                        <div class="pba-form-col">
+                            <input type="text" name="lastName" class="pba-form-input" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="pba-form-row">
+                        <div class="pba-form-col full">
+                            <input type="email" name="email" class="pba-form-input" placeholder="Email Address"
+                                required>
+                        </div>
+                    </div>
+                    <div class="pba-form-row">
+                        <div class="pba-form-col full">
+                            <input type="number" name="phone" class="pba-form-input" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="pba-form-row">
+                        <div class="pba-form-col full">
+                            <input type="text" name="state" class="pba-form-input" placeholder="State">
+                        </div>
+                    </div>
+                    <div class="pba-form-row">
+                        <div class="pba-form-col">
+                            <div class="pba-select-wrapper">
+                                <select class="pba-form-select" required>
+                                    <option value="" disabled selected>Investment Amount</option>
+                                    <option value="25000">$25,000 - $50,000</option>
+                                    <option value="50000">$50,000 - $100,000</option>
+                                    <option value="100000">$100,000 - $250,000</option>
+                                    <option value="250000">$250,000+</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="pba-form-col">
+                            <div class="pba-select-wrapper">
+                                <select class="pba-form-select" required>
+                                    <option value="" disabled selected>Investment Timeline</option>
+                                    <option value="short">0-2 Years</option>
+                                    <option value="medium">2-5 Years</option>
+                                    <option value="long">5+ Years</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btnSecond pba-submit-btn">Get Your <strong>FREE</strong> Guide
+                        Today!<i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <!-- Response Message -->
+                <div id="formResponse"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Form Container End -->
+
+
+
     <!-- Header Section Start -->
     <header id="header" class="header">
         <div class="container">
@@ -74,91 +148,13 @@
                                 </li>
                                 <!-- Header btn for mobile responsive -->
                                 <li class="nav-item d-block d-xl-none">
-                                    <a href="download-screen.html" class="btn btnPrimary">Get Your FREE Guide
+                                    <a href="#" class="popup-trigger btn btnPrimary">Get Your FREE Guide
                                         Today!</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="header-buttons d-none d-xl-block">
-                            <a href="#" id="popupTrigger" class="btn btnPrimary">Get Your FREE Guide Today!</a>
-                        </div>
-
-                        <!-- Popup Form Container -->
-                        <div id="popupContainer" class="popup-overlay">
-                            <div class="popup-content">
-                                <span class="popup-close">&times;</span>
-                                <div class="pba-investment-form pba-investment-form-2">
-                                    <div class="pba-form-title">
-                                        Get Insight into <span class="pba-highlight">The Top Fixed Income Bond
-                                            Investments Available</span> to
-                                        You.
-                                        Complete the Form Below to Get Your <span class="pba-highlight">FREE
-                                            Guide!</span>
-                                    </div>
-
-                                    <form id="ajaxForm">
-                                        <div class="pba-form-row">
-                                            <div class="pba-form-col">
-                                                <input type="text" name="firstName" class="pba-form-input"
-                                                    placeholder="First Name" required>
-                                            </div>
-                                            <div class="pba-form-col">
-                                                <input type="text" name="lastName" class="pba-form-input"
-                                                    placeholder="Last Name" required>
-                                            </div>
-                                        </div>
-                                        <div class="pba-form-row">
-                                            <div class="pba-form-col full">
-                                                <input type="email" name="email" class="pba-form-input"
-                                                    placeholder="Email Address" required>
-                                            </div>
-                                        </div>
-                                        <div class="pba-form-row">
-                                            <div class="pba-form-col full">
-                                                <input type="number" name="phone" class="pba-form-input"
-                                                    placeholder="Phone Number">
-                                            </div>
-                                        </div>
-                                        <div class="pba-form-row">
-                                            <div class="pba-form-col full">
-                                                <input type="text" name="state" class="pba-form-input"
-                                                    placeholder="State">
-                                            </div>
-                                        </div>
-                                        <div class="pba-form-row">
-                                            <div class="pba-form-col">
-                                                <div class="pba-select-wrapper">
-                                                    <select class="pba-form-select" required>
-                                                        <option value="" disabled selected>Investment Amount</option>
-                                                        <option value="25000">$25,000 - $50,000</option>
-                                                        <option value="50000">$50,000 - $100,000</option>
-                                                        <option value="100000">$100,000 - $250,000</option>
-                                                        <option value="250000">$250,000+</option>
-                                                    </select>
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </div>
-                                            </div>
-                                            <div class="pba-form-col">
-                                                <div class="pba-select-wrapper">
-                                                    <select class="pba-form-select" required>
-                                                        <option value="" disabled selected>Investment Timeline</option>
-                                                        <option value="short">0-2 Years</option>
-                                                        <option value="medium">2-5 Years</option>
-                                                        <option value="long">5+ Years</option>
-                                                    </select>
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btnSecond pba-submit-btn">Get Your
-                                            <strong>FREE</strong> Guide
-                                            Today!</button>
-                                    </form>
-
-                                    <!-- Response Message -->
-                                    <div id="formResponse"></div>
-                                </div>
-                            </div>
+                            <a href="#" class="popup-trigger btn btnPrimary">Get Your FREE Guide Today!</a>
                         </div>
                     </div>
                 </nav>
@@ -174,10 +170,10 @@
         <div class="hero-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 d-block d-lg-none mb-5">
+                    <div class="col-lg-5 col-xl-5 col-xxl-6 d-block d-lg-none mb-5">
                         <img class="pba-hero-1-img" src="assets/images/hero-1-img.png" alt="PBA Image">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-7 col-xl-7 col-xxl-6">
                         <div class="hero-1-content-box">
                             <div class="bond-card">
                                 <span class="discover">DISCOVER</span>
@@ -195,12 +191,12 @@
                                     compiled the <strong>top government and corporate bond yields in 2025</strong>, with
                                     expert-analysis from <strong>Parker Blackwood’s</strong> top
                                     financial advisers.</p>
-                                <a href="download-screen.html" class="btn btnPrimary">Get Your <strong>FREE</strong>
+                                <a href="#" class="popup-trigger btn btnPrimary">Get Your <strong>FREE</strong>
                                     Guide Today!</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 d-none d-lg-block">
+                    <div class="col-lg-5 col-xl-5 col-xxl-6 d-none d-lg-block">
                         <img class="pba-hero-1-img" src="assets/images/hero-1-img.png" alt="PBA Image">
                     </div>
                 </div>
@@ -333,7 +329,8 @@
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btnSecond pba-submit-btn">Get Your
-                                        <strong>FREE</strong> Guide Today!</button>
+                                        <strong>FREE</strong> Guide Today!<i
+                                            class="fa-solid fa-arrow-right"></i></button>
                                 </form>
 
                                 <!-- Response Message -->
@@ -381,9 +378,49 @@
         <div class="pba-compare-area">
             <div class="container">
                 <div class="pba-compare-slider-box">
-                    <div class="pba-compare-slider">
+                    <div class="pba-compare-slider position-relative">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="pba-compare-card">
+                                            <div class="pba-card-image">
+                                                <img src="assets/images/banking-bond.png" alt="Banking Bond" />
+                                            </div>
+                                            <h6 class="pba-card-title">Banking Bond</h6>
+                                            <div class="pba-card-rate">
+                                                9<span class="pba-card-rate-suffix">% p.a</span>
+                                            </div>
+                                            <div class="pba-card-details">
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Credit Rating</div>
+                                                    <div class="pba-detail-value">A</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Sector</div>
+                                                    <div class="pba-detail-value">Banking</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Country</div>
+                                                    <div class="pba-detail-value">Switzerland</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Maturity Date</div>
+                                                    <div class="pba-detail-value">15 Nov 2033</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Payment Freq.</div>
+                                                    <div class="pba-detail-value">Semi-Annually</div>
+                                                </div>
+                                                <div class="pba-detail-row">
+                                                    <div class="pba-detail-label">Min Investment</div>
+                                                    <div class="pba-detail-value">$50,000 AUD</div>
+                                                </div>
+                                            </div>
+                                            <button class="btn pba-card-button">Learn More</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="swiper-slide">
                                     <div class="swiper-slide-container">
                                         <div class="pba-compare-card">
@@ -465,86 +502,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-slide-container">
-                                        <div class="pba-compare-card">
-                                            <div class="pba-card-image">
-                                                <img src="assets/images/banking-bond.png" alt="Banking Bond" />
-                                            </div>
-                                            <h6 class="pba-card-title">Banking Bond</h6>
-                                            <div class="pba-card-rate">
-                                                9<span class="pba-card-rate-suffix">% p.a</span>
-                                            </div>
-                                            <div class="pba-card-details">
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Credit Rating</div>
-                                                    <div class="pba-detail-value">A</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Sector</div>
-                                                    <div class="pba-detail-value">Banking</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Country</div>
-                                                    <div class="pba-detail-value">Switzerland</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Maturity Date</div>
-                                                    <div class="pba-detail-value">15 Nov 2033</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Payment Freq.</div>
-                                                    <div class="pba-detail-value">Semi-Annually</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Min Investment</div>
-                                                    <div class="pba-detail-value">$50,000 AUD</div>
-                                                </div>
-                                            </div>
-                                            <button class="btn pba-card-button">Learn More</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-slide-container">
-                                        <div class="pba-compare-card">
-                                            <div class="pba-card-image">
-                                                <img src="assets/images/banking-bond.png" alt="Banking Bond" />
-                                            </div>
-                                            <h6 class="pba-card-title">Banking Bond</h6>
-                                            <div class="pba-card-rate">
-                                                9<span class="pba-card-rate-suffix">% p.a</span>
-                                            </div>
-                                            <div class="pba-card-details">
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Credit Rating</div>
-                                                    <div class="pba-detail-value">A</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Sector</div>
-                                                    <div class="pba-detail-value">Banking</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Country</div>
-                                                    <div class="pba-detail-value">Switzerland</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Maturity Date</div>
-                                                    <div class="pba-detail-value">15 Nov 2033</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Payment Freq.</div>
-                                                    <div class="pba-detail-value">Semi-Annually</div>
-                                                </div>
-                                                <div class="pba-detail-row">
-                                                    <div class="pba-detail-label">Min Investment</div>
-                                                    <div class="pba-detail-value">$50,000 AUD</div>
-                                                </div>
-                                            </div>
-                                            <button class="btn pba-card-button">Learn More</button>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                             <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
@@ -655,7 +613,9 @@
                                     portfolio! </p>
                             </div>
                             <div>
-                                <a href="download-screen.html" class="btn btnSecond">Speak to an Adviser Today!</a>
+                                <a href="mailto:info@pb-investment.com" class="btn btnSecond">
+                                    Speak to an Adviser Today!
+                                </a>
                             </div>
                         </div>
                     </div>

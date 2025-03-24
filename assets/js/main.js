@@ -7,7 +7,7 @@ var swiper = new Swiper(".pba-compare-slider .swiper-container", {
     clickable: true,
   },
   slidesPerView: 3,
-  loop: true,
+  loop: false,
   spaceBetween: 30,
   slideToClickedSlide: true,
 
@@ -15,19 +15,15 @@ var swiper = new Swiper(".pba-compare-slider .swiper-container", {
     0: {
       slidesPerView: 1,
       centeredSlides: true,
-      pagination: { el: ".swiper-pagination", clickable: true },
     },
-    640: {
+    768: {
       slidesPerView: 2,
-      centeredSlides: true,
-    },
-    992: {
-      slidesPerView: 2,
-      centeredSlides: true,
+      centeredSlides: false,
+      loop: true,
     },
     1200: {
       slidesPerView: 3,
-      centeredSlides: true,
+      centeredSlides: false,
     },
   },
 });
@@ -141,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((data) => {
           if (data.success) {
             formResponse.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
-            form.reset(); // Reset the form on success
+            form.reset();
             setTimeout(
               () => (window.location.href = "download-screen.html"),
               2000
@@ -158,7 +154,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Scroll To Top
 const scrollToTopBtn = $(".scrollToTop");
-// Show or hide the button based on scroll position
 function handleScrollToTop() {
   if ($(window).scrollTop() > 400) {
     scrollToTopBtn.fadeIn();
@@ -170,41 +165,38 @@ $(window).on("scroll", handleScrollToTop);
 scrollToTopBtn.on("click", function () {
   $("html, body").animate({ scrollTop: 0 }, "slow");
 });
-handleScrollToTop(); // Initial check when the page loads
+handleScrollToTop();
+
+
 
 
 // POPup Form
 document.addEventListener("DOMContentLoaded", function () {
-  const popupTrigger = document.getElementById("popupTrigger");
+  const popupTriggers = document.querySelectorAll(".popup-trigger");
   const popupContainer = document.getElementById("popupContainer");
   const popupClose = document.querySelector(".popup-close");
-  const ajaxForm = document.getElementById("ajaxForm");
-
-  // Show Popup
-  popupTrigger.addEventListener("click", function (event) {
-    event.preventDefault();
-    popupContainer.style.display = "flex";
+  const ajaxForms = document.querySelectorAll("#ajaxForm");
+  popupTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", function (event) {
+      event.preventDefault();
+      popupContainer.style.display = "flex";
+    });
   });
-
-  // Close Popup
   popupClose.addEventListener("click", function () {
     popupContainer.style.display = "none";
   });
 
-  // Close when clicking outside the form
   popupContainer.addEventListener("click", function (event) {
     if (event.target === popupContainer) {
       popupContainer.style.display = "none";
     }
   });
-
-  // Form Submission
-  ajaxForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    // Simulate form submission
-    setTimeout(() => {
-      window.location.href = "download-screen.html";
-    }, 500);
+  ajaxForms.forEach((form) => {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      setTimeout(() => {
+        window.location.href = "download-screen.html";
+      }, 500);
+    });
   });
 });

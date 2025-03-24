@@ -55,6 +55,10 @@
     .pba-get-expert-content .section-title-box .section-title span {
         font-size: 38px;
     }
+
+    .pba-hero-1-img {
+        max-height: 100%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -127,6 +131,11 @@
 
     .hero-area {
         margin-top: 73px;
+    }
+
+    .pba-compare-slider-box .swiper-pagination {
+        bottom: -70px !important;
+        display: block;
     }
 
 }
