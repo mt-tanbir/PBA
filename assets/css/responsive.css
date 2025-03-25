@@ -204,11 +204,51 @@
     .terms-banner-area .terms-banner-img {
         height: 395px;
     }
+
+    .popup-content {
+        padding: 40px 20px 20px;
+        max-width: 470px;
+    }
+
+    .popup-close {
+        top: 0px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    .pba-form-title {
+        font-size: 16px;
+        margin-bottom: 26px;
+    }
 }
 
 @media screen and (max-width: 640px) {}
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .pba-form-row {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .pba-form-input,
+    .pba-form-select {
+        padding: 8px 12px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .pba-submit-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .pba-submit-btn .fa-arrow-right {
+        top: 10px;
+        right: 9px;
+        font-size: 20px;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .pba-fixed-income-content .section-title-box .section-title span {
@@ -352,13 +392,13 @@
         line-height: 36px;
     }
 
-    .pba-form-row {
-        display: flex;
-        flex-flow: column;
-    }
-
     .pba-investment-form {
         padding: 30px;
+    }
+
+    .popup-content {
+        padding: 0px;
+        max-width: 380px;
     }
 
     .pba-guide-info .section-title .top-fixed {
@@ -462,8 +502,26 @@
     .pba-facility-box {
         margin-top: 60px;
     }
+
+    .hero-area {
+        background: #0100A4;
+        padding: 27px 0px;
+        margin-top: 74px;
+    }
+
+    .pba-hero-1-img {
+        max-height: 326px;
+    }
 }
 
 @media screen and (max-width: 426px) {}
 
-@media screen and (max-width: 376px) {}
+@media screen and (max-width: 376px) {
+    .pba-investment-form {
+        padding: 30px 20px 20px;
+    }
+
+    .popup-content {
+        max-width: 350px;
+    }
+}

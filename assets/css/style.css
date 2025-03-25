@@ -655,6 +655,10 @@ li {
     background-color: #d0d0d0;
 }
 
+.btn.pba-card-button:active {
+    background-color: #d0d0d0;
+}
+
 .pba-compare-slider-box .swiper-pagination {
     bottom: 130px !important;
     display: none;
@@ -1236,9 +1240,9 @@ li {
 
 .popup-content {
     background: linear-gradient(180deg, #0100A4 0%, #303AC1 100%);
-    padding: 66px 20px;
+    padding: 50px 20px;
     border-radius: 24px;
-    max-width: 636px;
+    max-width: 600px;
     width: 100%;
     position: relative;
     box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.25);
